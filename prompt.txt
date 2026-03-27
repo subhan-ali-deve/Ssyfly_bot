@@ -1,0 +1,251 @@
+undersatnd it  first 
+
+1 .when tell you it show its mean the result meesage display in existing menu .. not send new message 
+
+1. when we click on Main menu button  it show main menu again which is retrun welcome message you know 
+
+
+
+this bellow is main menu options event s...
+
+When i click Start Autotrading
+
+
+
+it show 
+
+✅ autotrading Started text
+
+Your bot is now running in standard mode
+
+Main Menu button 
+
+
+
+and in  main menu Start Autotrading button  is toggle with Pause  Autotrading
+
+when i click on Pause  Autotrading  is toogle or change text to start autotrading
+
+it show 
+
+⏹️ Standard autotrading stopped successfully! text
+
+Main Menu button 
+
+
+
+and send new meesage 
+
+text :🪰 SpyFly Session Summary
+
+SpyFly was auto-trading CA drops for 0h 29m 52s.
+
+Stats:
+
+• 0 CA drops monitored
+
+• 0 CA drops auto-traded (0 trades still active)
+
+• 0 SL triggered
+
+• 0 TP achieved
+
+• Biggest catch: N/A
+
+• Total Net PnL: +0.0000
+
+Press Start to continue autotrading.
+
+
+
+when i click  Add Sources 
+
+ it show  text  Add Sources Choose how you want to add sources: Monitored Groups:You haven't added any groups to monitor yet. Trusted Sources:You haven't added any trusted sources yet. Ignored Sources:You haven't added any ignored sources yet.
+
+ an
+
+add your own  button
+
+   back   buttons
+
+
+
+when i click add your own it send a new msg text
+
+👥 Add monitored source
+
+Enter a Telegram source you want to monitor for trading signals.
+
+📱 Telegram examples:
+
+• Crypto Signals Group
+
+• @trading_channel
+
+• Alpha Calls
+
+💡 Tip: use the exact name.
+
+
+
+when i click select source to autotrade
+
+it show
+
+text select source to autotrade
+
+ buttons 
+
+Any Three - 3 min (SHOCKED, PASTEL, POTION & others (p... 
+
+SUPER ALPHA (preset
+
+ SpyFly Recovery Radar (preset 
+
+BSC Plays by SpyFly (preset More
+
+  Add More 
+
+Back to Main Menu
+
+
+
+i call this parent options (Any Three - 3 min (SHOCKED, PASTEL, POTION & others (p... 
+
+SUPER ALPHA (preset
+
+ SpyFly Recovery Radar (preset 
+
+BSC Plays by SpyFly (preset More
+
+  Add More 
+
+Back to Main Menu)
+
+
+
+and when i click one of these buttons 
+
+ Any Three - 3 min (SHOCKED, PASTEL, POTION & others (p... 
+
+SUPER ALPHA (preset
+
+ SpyFly Recovery Radar (preset 
+
+BSC Plays by SpyFly (preset More
+
+
+
+its show button text/label updated!
+
+and below same butions
+
+Any Three - 3 min (SHOCKED, PASTEL, POTION & others (p... 
+
+SUPER ALPHA (preset
+
+ SpyFly Recovery Radar (preset 
+
+BSC Plays by SpyFly (preset More
+
+  Add More 
+
+Back to Main Menu
+
+
+
+for example i click Any Three - 3 min (SHOCKED, PASTEL, POTION & others (p... 
+
+it show text Any Three - 3 min (SHOCKED, PASTEL, POTION & others  updated
+
+and below buttons
+
+Any Three - 3 min (SHOCKED, PASTEL, POTION & others (p... 
+
+SUPER ALPHA (preset
+
+ SpyFly Recovery Radar (preset 
+
+BSC Plays by SpyFly (preset More
+
+  Add More 
+
+Back to Main Menu
+
+ 
+
+
+
+same this 
+
+for SUPER ALPHA (preset
+
+SpyFly Recovery Radar (preset
+
+BSC Plays by SpyFly (preset More
+
+
+
+
+
+when i click on Add more buttoon
+
+it show text slect source to autotrdae
+
+buttons
+
+ 
+
+DoubleTap 3 min (SHOCKED, PASTEL, POTION & OTHERS) 
+
+(... SpyFly MoonX (preset)
+
+ First Two - 3 min (SHOCKED, PASTEL, POTION & others)(p... 
+
+Prev
+
+
+
+when i click on 
+
+one of these buttons 
+
+DoubleTap 3 min (SHOCKED, PASTEL, POTION & OTHERS) 
+
+(... SpyFly MoonX (preset)
+
+ First Two - 3 min (SHOCKED, PASTEL, POTION & others)(p...
+
+
+
+it show buttn text or label plus  updated text
+
+and :
+
+add the selected button option to the parent button option .
+
+
+
+for exmaple i click DoubleTap 3 min (SHOCKED, PASTEL, POTION & OTHERS)
+
+
+
+its show:
+
+DoubleTap 3 min (SHOCKED, PASTEL, POTION & OTHERS) updated text
+
+and buttons
+
+DoubleTap 3 min (SHOCKED, PASTEL, POTION & OTHERS)
+
+Any Three - 3 min (SHOCKED, PASTEL, POTION & others (p... 
+
+SUPER ALPHA (preset
+
+ SpyFly Recovery Radar (preset 
+
+BSC Plays by SpyFly (preset More
+
+  Add More 
+
+Back to Main Menu

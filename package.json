@@ -1,0 +1,28 @@
+{
+  "name": "telegram-spyfly-bot",
+  "version": "1.0.0",
+  "description": "Telegram trading bot with Grammy framework",
+  "main": "dist/bot.js",
+  "scripts": {
+    "dev": "ts-node src/bot.ts",
+    "build": "tsc",
+    "start": "node dist/bot.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "grammy",
+    "trading"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
