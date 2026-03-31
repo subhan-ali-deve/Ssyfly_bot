@@ -36,14 +36,16 @@ export function getSourceSelectionKeyboard(selectedSources: string[] = []) {
     .text(getLabel(BUTTONS.RECOVERY_RADAR, "recovery_radar"), CALLBACKS.RECOVERY_RADAR).row()
     .text(getLabel(BUTTONS.BSC_PLAYS, "bsc_plays"), CALLBACKS.BSC_PLAYS).row()
     .text(BUTTONS.MORE, CALLBACKS.MORE_SOURCES).row()
-    .text(BUTTONS.CONTINUE_ONBOARDING, CALLBACKS.CONTINUE_ONBOARDING).row()
-    .text(BUTTONS.BACK, CALLBACKS.BACK);
+    .text(BUTTONS.ADD_MORE, CALLBACKS.ADD_MORE_SOURCES).row()  // ← ADD THIS
+    // .text(BUTTONS.CONTINUE_ONBOARDING, CALLBACKS.CONTINUE_ONBOARDING).row()
+    .text(BUTTONS.BACK_TO_MAIN_MENU, CALLBACKS.MAIN_MENU);
+
 
   return keyboard;
 }
 
 /**
- * LOGIC: "More" sources page - shows additional sources + selected ones from main page
+ * LOGIC: "More" sources page - shows additional sources
  * WHY: Too many sources to fit on one screen
  */
 export function getMoreSourcesKeyboard(selectedSources: string[] = []) {
@@ -53,28 +55,15 @@ export function getMoreSourcesKeyboard(selectedSources: string[] = []) {
     return selectedSources.includes(sourceId) ? `${baseLabel} ✓` : baseLabel;
   };
 
-  // Show previously selected sources at top
-  if (selectedSources.includes("super_alpha")) {
-    keyboard.text(getLabel(BUTTONS.SUPER_ALPHA, "super_alpha"), CALLBACKS.SUPER_ALPHA).row();
-  }
-  if (selectedSources.includes("any_three")) {
-    keyboard.text(getLabel(BUTTONS.ANY_THREE, "any_three"), CALLBACKS.ANY_THREE).row();
-  }
-  if (selectedSources.includes("recovery_radar")) {
-    keyboard.text(getLabel(BUTTONS.RECOVERY_RADAR, "recovery_radar"), CALLBACKS.RECOVERY_RADAR).row();
-  }
-  if (selectedSources.includes("bsc_plays")) {
-    keyboard.text(getLabel(BUTTONS.BSC_PLAYS, "bsc_plays"), CALLBACKS.BSC_PLAYS).row();
-  }
-
-  // Additional sources
+  // ONLY show additional sources (not main ones)
   keyboard
     .text(getLabel(BUTTONS.DOUBLE_TAP, "double_tap"), CALLBACKS.DOUBLE_TAP).row()
     .text(getLabel(BUTTONS.FIRST_TWO, "first_two"), CALLBACKS.FIRST_TWO).row()
     .text(getLabel(BUTTONS.MOONX, "moonx"), CALLBACKS.MOONX).row()
     .text(BUTTONS.PREV, CALLBACKS.PREV_SOURCES).row()
-    .text(BUTTONS.CONTINUE_ONBOARDING, CALLBACKS.CONTINUE_ONBOARDING).row()
-    .text(BUTTONS.BACK, CALLBACKS.BACK);
+    // .text(BUTTONS.ADD_MORE, CALLBACKS.ADD_MORE_SOURCES).row()  // ← ADD THIS
+    // .text(BUTTONS.CONTINUE_ONBOARDING, CALLBACKS.CONTINUE_ONBOARDING).row()
+    // .text(BUTTONS.BACK, CALLBACKS.BACK);
 
   return keyboard;
 }

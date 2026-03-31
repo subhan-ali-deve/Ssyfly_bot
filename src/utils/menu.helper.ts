@@ -10,7 +10,14 @@ export interface UserState {
   currentMenu: string;
   previousMenu: string[];
   selectedSources: string[];
+  selectedAutotradeSources: string[];
+  selectedPrivateSources: string[];
+  subscribedFreeGroups: string[];      // NEW
+  subscribedPremiumGroups: string[];   // NEW
   isReturningUser: boolean;
+  isAutotrading: boolean;
+  isAgentMonitoring: boolean;          // NEW
+  autotradingStartTime?: Date;
   tradingSetup?: {
     setupType?: "jeffrey" | "custom";
     ecosystem?: "solana" | "bsc" | "both";
@@ -32,15 +39,19 @@ export function getUserState(userId: number): UserState {
       currentMenu: "main",
       previousMenu: [],
       selectedSources: [],
+      selectedAutotradeSources: [],
+      selectedPrivateSources: [],
+      subscribedFreeGroups: [],        // NEW
+      subscribedPremiumGroups: [],     // NEW
       isReturningUser: false,
+      isAutotrading: false,
+      isAgentMonitoring: false,        // NEW
       tradingSetup: {
         solAmount: 0.1,
         bnbAmount: 0.02,
       },
     });
   }
-  console.log(userStates);
-
   return userStates.get(userId)!;
 }
 

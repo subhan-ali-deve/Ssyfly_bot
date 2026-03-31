@@ -25,15 +25,23 @@ export function getInitialWelcomeKeyboard() {
  * LOGIC: Returning user menu - grid layout with all features
  * WHY: Experienced users need quick access to all functions
  */
-export function getReturningUserKeyboard() {
+/**
+ * LOGIC: Returning user menu with dynamic Start/Pause button
+ * WHY: Button changes based on autotrading state
+ */
+export function getReturningUserKeyboard(isAutotrading: boolean = false) {
+  const autotradingButton = isAutotrading 
+    ? { text: BUTTONS.PAUSE_AUTOTRADING, callback: CALLBACKS.PAUSE_AUTOTRADING }
+    : { text: BUTTONS.START_AUTOTRADING, callback: CALLBACKS.START_AUTOTRADING };
+
   return new InlineKeyboard()
-    .text(BUTTONS.START_AUTOTRADING, "start_autotrading")
-    .text(BUTTONS.ADD_SOURCES, "add_sources").row()
-    .text(BUTTONS.SELECT_SOURCES_AUTOTRADE, "select_autotrade")
-    .text(BUTTONS.SELECT_SOURCES_PRIVATE, "select_private").row()
+    .text(autotradingButton.text, autotradingButton.callback)
+    .text(BUTTONS.ADD_SOURCES, CALLBACKS.ADD_SOURCES).row()
+    .text(BUTTONS.SELECT_SOURCES_AUTOTRADE, CALLBACKS.SELECT_AUTOTRADE)
+    .text(BUTTONS.SELECT_SOURCES_PRIVATE, CALLBACKS.SELECT_PRIVATE).row()
     .text(BUTTONS.CREATE_SIGNAL_FEED, "create_signal_feed").row()
-    .text(BUTTONS.HOW_TO_USE, "how_to_use")
-    .text(BUTTONS.JOIN_ALPHA_WAITLIST, "alpha_waitlist").row()
+    .text(BUTTONS.HOW_TO_USE, CALLBACKS.HOW_TO_USE)  // ← ADD THIS
+    .text(BUTTONS.JOIN_ALPHA_WAITLIST, CALLBACKS.ALPHA_WAITLIST).row()  // ← ADD THIS
     .text(BUTTONS.ACCOUNT_WALLETS, "account_wallets")
     .text(BUTTONS.POSITIONS, "positions").row()
     .text(BUTTONS.SETTINGS, "settings")
